@@ -17,9 +17,9 @@ public class Subject4Test {
     })
     public void test_reverse(String nums, String expectedNums) {
         Subject4.Node node = Subject4.fromString(nums);
-        subject4.reverse(node);
+        Subject4.Node node1 = subject4.reverse(node);
 
-        String result = Subject4.toString(node);
+        String result = Subject4.toString(node1);
         assertEquals(expectedNums, result);
     }
 }
