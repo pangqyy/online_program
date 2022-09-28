@@ -18,7 +18,5 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn clean package -Dmaven.test.skip=true
-    - name: run fatjar
-      run: java -jar target/program-0.0.1-SNAPSHOT.jar
+    - name: Run Maven Test
+      run: mvn clean test
